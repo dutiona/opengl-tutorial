@@ -28,7 +28,7 @@ target_include_directories(
     "$<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/source>"
 )
 
-target_compile_features(opengl-tutorial_lib PUBLIC cxx_std_20)
+target_compile_features(opengl-tutorial_lib PUBLIC cxx_std_23)
 
 
 add_library(
@@ -55,7 +55,7 @@ set_target_properties(
     EXPORT_NAME opengl-tutorial
 )
 
-target_compile_features(opengl-tutorial_opengl-tutorial PRIVATE cxx_std_20)
+target_compile_features(opengl-tutorial_opengl-tutorial PRIVATE cxx_std_23)
 
 find_package(ctre REQUIRED)
 find_package(Eigen3 REQUIRED)
